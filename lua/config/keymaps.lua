@@ -17,3 +17,5 @@ local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 keymap("n", "<esc>", ":noh<cr>", opts)
+keymap("n", "<C-D>", "<C-D>zz")
+keymap("n", "<C-U>", "<C-U>zz")
