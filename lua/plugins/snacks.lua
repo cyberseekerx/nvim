@@ -56,7 +56,7 @@ return {
 			desc = "Command History",
 		},
 		{
-			"<leader>n",
+			"<leader>nt",
 			function()
 				Snacks.picker.notifications()
 			end,
@@ -464,7 +464,7 @@ return {
 			desc = "Select Scratch Buffer",
 		},
 		{
-			"<leader>n",
+			"<leader>nz",
 			function()
 				Snacks.notifier.show_history()
 			end,

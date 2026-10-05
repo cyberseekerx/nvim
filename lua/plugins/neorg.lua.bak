@@ -1,0 +1,48 @@
+return {
+	"nvim-neorg/neorg",
+	lazy = false,
+	dependencies = {
+		"nvim-lua/plenary.nvim",
+		"nvim-telescope/telescope.nvim",
+		"nvim-neorg/neorg-telescope",
+	},
+	config = function()
+		require("neorg").setup({
+			load = {
+				["core.defaults"] = {}, -- Loads default behavior
+				["core.concealer"] = {
+					config = {
+						icon_preset = "diamond", -- Nice clean icons for lists/headings
+					},
+				},
+				["core.dirman"] = { -- Manages Neorg workspaces
+					config = {
+						workspaces = {
+							notes = "~/Notes/",
+						},
+						index = "index.norg",
+					},
+				},
+				["core.keybinds"] = { -- Enables all default Neorg keybindings
+					config = {
+						default_keybinds = true,
+						neorg_leader = [[\]], -- Fixed string escaping for the backslash leader
+					},
+				},
+				["core.completion"] = { -- Enables autocompletion support
+					config = {
+						engine = "nvim-cmp", -- Or "blink.cmp" if you use Blink
+					},
+				},
+				["core.esupports.metagen"] = { -- Automatically injects title/author/date metadata headers
+					config = {
+						type = "auto",
+					},
+				},
+				["core.export"] = {},
+				["core.summary"] = {},
+				["core.integrations.telescope"] = {},
+			},
+		})
+	end,
+}

@@ -13,6 +13,8 @@ end, { desc = "Format current file" })
 vim.keymap.set("n", "<S-h>", "<cmd>bprevious<CR>", { desc = "Prev buffer" })
 vim.keymap.set("n", "<S-l>", "<cmd>bnext<CR>", { desc = "Next buffer" })
 vim.keymap.set("n", "<leader>uzt", ":TransparentToggle<CR>")
+vim.keymap.set("n", "<leader>oa", "<cmd>OrgSuperAgenda<cr>")
+vim.keymap.set("n", "<leader>oA", "<cmd>OrgSuperAgenda!<cr>") -- fullscreen
 local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 

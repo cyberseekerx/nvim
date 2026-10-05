@@ -63,3 +63,4 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.hl.hl_op({ higroup = "IncSearch", timeout = 100 })
 	end,
 })
+vim.opt.swapfile = false --- good to have swapfile in case of power outage
