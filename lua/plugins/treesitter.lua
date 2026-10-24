@@ -9,6 +9,7 @@ return {
 		-- Install parsers using the new API
 		require("nvim-treesitter").install({
 			"c",
+			"asm",
 			"lua",
 			"vim",
 			"vimdoc",

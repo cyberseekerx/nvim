@@ -5,7 +5,7 @@
       "src": "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim"
     },
     "mini.animate": {
-      "rev": "fe1257505eaec2b988aa1f80f6471db850d99bb1",
+      "rev": "ed7d4a2a6fac1777e6da1446127eea87dd2419b5",
       "src": "https://github.com/nvim-mini/mini.animate"
     }
   }
