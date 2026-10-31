@@ -9,7 +9,7 @@ mv ~/.local/share/nvim{,.bak}
 mv ~/.local/state/nvim{,.bak}
 mv ~/.cache/nvim{,.bak}
 
-git clone https://github.com/LazyVim/starter ~/.config/nvim
+git clone https://github.com/cyberseekerx/nvim.git ~/.config/nvim
 
 rm -rf ~/.config/nvim/.git
 nvim
@@ -35,3 +35,7 @@ Remove-Item $env:LOCALAPPDATA\nvim\.git -Recurse -Force
 # optional but recommended
 Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
 ```
+
+
+
+#readme inspired from lazyvim
