@@ -80,13 +80,3 @@ end)
 vim.keymap.set("n", "<C-S-N>", function()
 	harpoon:list():next()
 end)
-vim.keymap.set("n", "<leader>uP", function()
-	if vim.b.minipairs_disable then
-		vim.b.minipairs_disable = false
-		print("mini.pairs enabled (buffer)")
-	else
-		vim.b.minipairs_disable = true
-		print("mini.pairs disabled (buffer)")
-	end
-end, { desc = "Toggle mini.pairs for current buffer" })
-local surround = require("mini.surround")
