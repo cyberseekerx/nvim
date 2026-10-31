@@ -20,16 +20,18 @@ vim.opt.rtp:prepend(lazypath)
 -- This is also a good place to setup other settings (vim.opt)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
+require("config.options")
+-- Setup lazy.nvim
 require("lazy").setup({
 	spec = {
+		-- import your plugins
 		{ import = "plugins" },
 	},
+	-- Configure any other settings here. See the documentation for more details.
+	-- colorscheme that will be used when installing plugins.
 	install = { colorscheme = { "kanagawa-wave" } },
+	-- automatically check for plugin updates
 	checker = { enabled = true },
-	-- Add this block to disable automatic readme/doc generation on first install
-	readme = {
-		enabled = false,
-	},
 })
 
 require("config.keymaps")
