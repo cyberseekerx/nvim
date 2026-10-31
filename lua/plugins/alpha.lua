@@ -495,11 +495,12 @@ return {
 		}
 
 		dashboard.section.buttons.val = {
-			-- dashboard.button("e", "  > New file", ":ene <BAR> startinsert <CR>"),
+			dashboard.button("e", "  > New file", ":ene <BAR> startinsert <CR>"),
 			--dashboard.button("b", "λ  > Browse files", ":Yazi<CR>"),
 			dashboard.button("z", "λ  > Browse Directories", ":lua require('fzf-lua').zoxide()<CR>"),
 			dashboard.button("f", "λ  > Find file", ":lua Snacks.picker.files()<CR>"),
 			dashboard.button("r", "λ  > Recent", ":lua Snacks.picker.recent()<CR>"),
+			dashboard.button("q", "λ  > Quit Neovim", "<cmd>qa<CR>"),
 		}
 		dashboard.section.header.opts.position = "center"
 		dashboard.section.buttons.opts.position = "center"

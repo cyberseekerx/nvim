@@ -89,3 +89,4 @@ vim.keymap.set("n", "<leader>uP", function()
 		print("mini.pairs disabled (buffer)")
 	end
 end, { desc = "Toggle mini.pairs for current buffer" })
+local surround = require("mini.surround")

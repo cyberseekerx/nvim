@@ -5,3 +5,4 @@ vim.api.nvim_create_autocmd("VimEnter", {
 		require("lazy").sync({ show = false })
 	end,
 })
+require("mini.surround").setup()
