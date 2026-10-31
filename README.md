@@ -1,5 +1,7 @@
 # nvim
 my neovim config
+
+install script for Linux
 ```bash
 # required
 mv ~/.config/nvim{,.bak}
@@ -14,12 +16,16 @@ git clone https://github.com/cyberseekerx/nvim.git ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 nvim
 ```
+## How to install Neovim on windows natively
 ```powershell
 ## How to install Neovim on windows natively 
 winget install neovim.neovim
 #or scoop
 scoop install neovim
+```
 
+# install script for windows
+```powershell
 for Windows user
 
 # required
