@@ -29,6 +29,17 @@ require("lazy").setup({
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
+	-- performance = {
+	rtp = {
+		disabled_plugins = {
+			"gzip",
+			"netrwPlugin",
+			"tarPlugin",
+			"tohtml",
+			"tutor",
+			"zipPlugin",
+		},
+	},
 	install = { colorscheme = { "kanagawa-wave" } },
 	-- automatically check for plugin updates
 	checker = { enabled = true },
