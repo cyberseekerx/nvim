@@ -1,5 +1,7 @@
 return {
 	"rebelot/kanagawa.nvim",
+	lazy = false,
+	priorty = 1000,
 	config = function()
 		require("kanagawa").setup({
 			compile = true,
@@ -18,6 +20,8 @@ return {
 			end,
 		})
 		vim.cmd("colorscheme kanagawa-wave")
+		--vim.cmd("colorscheme kanagawa-dragon")
+		--vim.cmd("colorscheme kanagawa-lotus")
 	end,
 	build = function()
 		vim.cmd("KanagawaCompile")
