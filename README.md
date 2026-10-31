@@ -1,5 +1,7 @@
 # nvim
 my neovim config
+* note you will get about 50 errors on the first and second boot of my config
+* these are expected to happen (open an c,python ,lua,html file)but you will get better startup time on ever other opening of this tool
 
 install script for Linux
 ```bash
