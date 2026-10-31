@@ -41,7 +41,14 @@ Remove-Item $env:LOCALAPPDATA\nvim\.git -Recurse -Force
 # optional but recommended
 Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
 ```
+### needed dependency for my config
+```powershell
+winget install JetBrains.JetBrainsMonoNerdFont
+```
+By default in windows 11, terminal applications like Powershell use the same application: Windows Terminal
+here are two main places to change the colors in WT:
 
-
+    In Settings (Ctrl+,) > Color Schemes > Edit the specific colors in a named color scheme
+    In Settings > under Profiles > choose the profile to edit > Appearance > select which color scheme to use on that profile, and see which colors apply to different types of syntax
 
 #readme inspired from lazyvim
