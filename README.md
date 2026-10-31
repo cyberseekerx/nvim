@@ -14,6 +14,7 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 nvim
 ```
+```powershell
 ## How to install Neovim on windows natively 
 winget install neovim.neovim
 #or scoop
@@ -33,3 +34,4 @@ git clone https://github.com/cyberseekerx/nvim.git $env:LOCALAPPDATA\nvim
 Remove-Item $env:LOCALAPPDATA\nvim\.git -Recurse -Force
 # optional but recommended
 Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
+```
